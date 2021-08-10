@@ -1,2 +1,186 @@
-<p>Hello 大家好!</p>
-<p>我来测试一下我的网站</p>
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+		<title>黑马面面</title>
+	</head>
+
+	<body>
+		<!--wrap模块-->
+		<section class="wrap">
+			<header class="header">黑马面面</header>
+			<div class="nav">
+				<a href="#">
+					<img src="icons/icon1.png" />hr面试
+				</a>
+				<a href="#">
+					<img src="icons/icon2.png" />笔试
+				</a>
+				<a href="#">
+					<img src="icons/icon3.png" />技术面试
+				</a>
+				<a href="#">
+					<img src="icons/icon4.png" />模拟面试
+				</a>
+				<a href="#">
+					<img src="icons/icon5.png" />面试技巧
+				</a>
+				<a href="#">
+					<img src="icons/icon6.png" />薪资查询
+				</a>
+			</div>
+
+			<section class="go">
+				<img src="images/go.png" />
+			</section>
+		</section>
+		<!--就业指导模块-->
+		<div class="content">
+			<div class="con-hd">
+				<h4>就业指导</h4>
+				<a href="">更多>></a>
+			</div>
+
+			<div class="get-job-focus">
+				<div class="swiper-container get-job-fo">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="">
+								<img src="images/pic.png" />
+							</a>
+							<p>老师教你应对面试技巧</p>
+						</div>
+
+						<div class="swiper-slide">
+							<a href="">
+								<img src="images/ldh.jpg" />
+							</a>
+							<p>老师教你应对面试技巧</p>
+						</div>
+
+						<div class="swiper-slide">
+							<a href="">
+								<img src="images/3.jpg" />
+							</a>
+							<p>老师教你应对面试技巧</p>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+		<!--充电学习模块-->
+		<div class="content con-bottom">
+
+			<div class="con-hd">
+				<h4 class="con2-h4">充电学习</h4>
+				<a href="">更多>></a>
+			</div>
+
+			<div class="study">
+				<div class="swiper-container study-fo">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/pic1.png" />
+							<h5>说地道英语，告别中式英语</h5>
+							<p>156人学习</p>
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/pic2.png"/>
+							<h5>思维攻略金字塔思维提升写作能力</h5>
+							<p>125人学习</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/pic1.png" />
+							<h5>说地道英语，告别中式英语</h5>
+							<p>156人学习</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/pic1.png" />
+							<h5>说地道英语，告别中式英语</h5>
+							<p>156人学习</p>
+						</div>
+
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+		<!--footer模块-->
+		<div class="footer">
+			<a href="#">
+				<img src="icons/home.png"/>
+				首页
+			</a>
+			
+			<a href="#">
+				<img src="icons/net.png"/>
+				技术面试
+			</a>
+			
+			<a href="#">
+				<img src="icons/ms.png"/>
+				模拟面试
+			</a>
+			
+			<a href="#">
+				<img src="icons/user.png"/>
+				我的主页
+			</a>
+			
+		</div>
+		<script type="text/javascript" src="js/flexible.js"></script>
+		<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+		<script>
+			//沙箱函数、自调用函数
+			//			//通用函数
+			//			(function() {
+			//				var swiper = new Swiper('.swiper-container', {
+			//					//能够看到的轮播图个数、预览轮播图的个数
+			//					slidesPerView: 2,
+			//					spaceBetween: 30,
+			//					centeredSlides: true,
+			//					loop: true,
+			//					navigation: {
+			//						nextEl: '.swiper-button-next',
+			//						prevEl: '.swiper-button-prev',
+			//					},
+			//				});
+			//			})();
+			//就业指导模块
+			(function() {
+				var swiper = new Swiper('.get-job-fo', {
+					//能够看到的轮播图个数、预览轮播图的个数
+					slidesPerView: 2,
+					spaceBetween: 30,
+					centeredSlides: true,
+					loop: true,
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				});
+			})();
+
+			//充电学习模块
+			(function() {
+				var swiper = new Swiper('.study-fo', {
+					slidesPerView: 2.5,
+					spaceBetween: 20,
+				});
+			})();
+		</script>
+	</body>
+
+</html>
